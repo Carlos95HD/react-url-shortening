@@ -1,9 +1,10 @@
 import './assets/css/styles.css'
+import { NavBar } from './components/ui/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Shortly URL shortening API Challenge</h1>
+    <div>
+      <NavBar />
     </div>
   );
 }
