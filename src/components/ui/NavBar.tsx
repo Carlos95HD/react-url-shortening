@@ -30,7 +30,7 @@ export const NavBar = () => {
           <li className="self-center">
               <a
                 href="/"
-                className="block py-2 pr-4 pl-3 text-white md:text-gray-500 md:border-0 md:hover:text-gray-900 md:p-0"
+                className="block py-2 pr-4 pl-3 md:border-0 md:hover:text-gray-900 md:p-0"
               >
                 Features
               </a>
@@ -38,7 +38,7 @@ export const NavBar = () => {
             <li className="self-center">
               <a
                 href="/"
-                className="block py-2 pr-4 pl-3 text-white md:text-gray-500 md:border-0 md:hover:text-gray-900 md:p-0"
+                className="block py-2 pr-4 pl-3 md:border-0 md:hover:text-gray-900 md:p-0"
               >
                 Pricing
               </a>
@@ -46,7 +46,7 @@ export const NavBar = () => {
             <li className="self-center">
               <a
                 href="/"
-                className="block py-2 pr-4 pl-3 text-white md:text-gray-500 md:border-0 md:hover:text-gray-900 md:p-0"
+                className="block py-2 pr-4 pl-3 md:border-0 md:hover:text-gray-900 md:p-0"
               >
                 Resources
               </a>
@@ -58,7 +58,7 @@ export const NavBar = () => {
             <li className="self-center">
             <a
                 href="/"
-                className="block py-2 pr-4 pl-3 text-white md:text-gray-500 md:border-0 md:hover:text-gray-900 md:p-0"
+                className="block py-2 pr-4 pl-3 md:border-0 md:hover:text-gray-900 md:p-0"
               >
                 Login
               </a>
@@ -66,7 +66,7 @@ export const NavBar = () => {
             <li>
             <a
                 href="/"
-                className="btn btn-primary block py-2 pr-4 pl-3 text-white rounded-full w-full md:w-auto md:border-0 md:hover:disabled:"
+                className="btn btn-primary block py-2 px-4 text-white rounded-full w-full md:w-auto md:border-0 md:hover:disabled:"
               >
                 Sign Up
               </a>
