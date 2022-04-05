@@ -2,7 +2,7 @@ import working from "../../assets/img/illustration-working.svg";
 
 export const Title = () => {
   return (
-    <article className="container mx-auto grid grid-row-2 md:grid-cols-2 overflow-visible">
+    <article className="bg-white container grid grid-row-2 mx-auto mt-24 md:grid-cols-2 overflow-visible">
       <article className="row-start-2 md:row-start-auto">
         <div className="flex flex-col justify-center h-full items-center text-center md:text-left md:items-start md:w-3/4">
           <h2 className="font-extrabold text-5xl lg:text-7xl">

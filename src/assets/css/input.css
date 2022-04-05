@@ -22,6 +22,7 @@
   --body-font: 'Poppins', sans-serif;
 }
 
+/* General */
 body,html{
   height: 100vh;
   font-family: var(--body-font);
@@ -53,15 +54,29 @@ p, a{
   transition: all 300ms ease;
 }
 
-.btn:hover{
-  opacity: .5;
-}
-
 .btn-primary{
   background-color: var(--cyan);
   color: var(--text-white);
 }
 
+.btn-primary:hover{
+  background-color:hsl(180, 66%, 69%);
+}
+
+/* Navbar */
+
 .bg-nav{
   background-color: var(--dark-violet);
+}
+
+/* Shortener */
+.shorten-bg{
+  background: no-repeat;
+  background-color: var(--dark-violet);
+  background-size: cover;
+  background-image: url('../../assets/img/bg-shorten-desktop.svg');
+}
+
+.bg-gray{
+  background-color: var(--text-white)
 }
