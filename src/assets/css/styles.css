@@ -516,12 +516,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.bottom-12 {
+  bottom: 3rem;
+}
+
 .bottom-20 {
   bottom: 5rem;
 }
 
 .top-28 {
   top: 7rem;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .row-start-2 {
@@ -542,8 +550,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .ml-3 {
@@ -554,16 +567,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.-mb-12 {
+  margin-bottom: -3rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mr-4 {
@@ -654,6 +675,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -759,6 +784,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -795,6 +825,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -807,6 +842,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-extrabold {
@@ -827,7 +870,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root{
   /* ### Primary */
@@ -931,6 +974,16 @@ p, a{
   background-color: var(--dark-violet);
   background-size: cover;
   background-image: url('../../assets/img/bg-shorten-desktop.svg');
+}
+
+/* Boost */
+
+.boost-bg{
+  background: no-repeat;
+  background-color: var(--dark-violet);
+  background-size: cover;
+  background-image: url('../../assets/img/bg-boost-desktop.svg');
+  background-position: center;
 }
 
 .hover\:bg-gray-100:hover {

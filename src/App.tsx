@@ -9,7 +9,7 @@ function App() {
     <div className='overflow-hidden'>
       <NavBar />
       <Title />
-      <div className="bg-gray mt-36">
+      <div className="bg-gray mt-40">
         <Shortener />
         <Statistics />
       </div>
