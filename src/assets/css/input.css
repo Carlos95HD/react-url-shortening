@@ -40,6 +40,10 @@ p, a{
   color: var(--grayish-violet);
 }
 
+footer{
+  background-color: var(--very-dark-violet);
+}
+
 /* Presets */
 .btn {
   display: inline-block;
@@ -111,4 +115,22 @@ p, a{
   background-size: cover;
   background-image: url('../../assets/img/bg-boost-desktop.svg');
   background-position: center;
+}
+
+/* Footer */
+.footer_link{
+  transition: color 300ms ease;
+}
+
+.footer_link:hover{
+  color:var(--cyan);
+}
+
+.footer_social svg{
+  fill: #FFF;
+  transition: all 300ms ease;
+}
+
+.footer_social svg:hover{
+  fill:cyan
 }
