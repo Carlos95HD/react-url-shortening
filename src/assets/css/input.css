@@ -95,6 +95,10 @@ footer{
   color:hsl(180, 66%, 69%);
 }
 
+.error{
+  color: var(--red);
+}
+
 /* Navbar */
 .bg-nav{
   background-color: var(--dark-violet);

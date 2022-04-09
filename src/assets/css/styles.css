@@ -512,6 +512,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -601,6 +605,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-6 {
   margin-right: 1.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .block {
@@ -873,6 +881,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 400;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -976,6 +988,10 @@ footer{
 
 .link-primary:hover{
   color:hsl(180, 66%, 69%);
+}
+
+.error{
+  color: var(--red);
 }
 
 /* Navbar */
