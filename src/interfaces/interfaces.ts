@@ -1,6 +1,6 @@
 export interface linkData{
   code: string,
-  shortLink:string,
+  fullShortLink:string,
   originalLink: string,
 }
 

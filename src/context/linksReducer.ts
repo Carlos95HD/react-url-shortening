@@ -9,7 +9,7 @@ export const linksReducer = (state: linkState, action: linksAction): linkState =
     case 'addLink':
       return{
         ...state,
-        links: [...state.links, action.payload]
+        links: [ action.payload,...state.links ]
       }
 
     default:

@@ -1,6 +1,8 @@
-import { Field, Form, Formik, FormikErrors } from "formik";
+import { Field, Form, Formik, FormikErrors, FormikHelpers } from "formik";
+import { useState } from "react";
 import { useLinks } from "../../hooks/useLinks";
-import { getLinkData } from "../../utils/helpers/shortener.helpers";
+import { getLinkData, verifyDuplicated } from "../../utils/helpers/shortener.helpers";
+import { Spinner } from "../layout/Spinner/Spinner";
 import { Links } from "./Links";
 
 export interface FormValues {
@@ -8,19 +10,29 @@ export interface FormValues {
 }
 
 export const Shortener = () => {
+  const { addLink, links } = useLinks();
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const { addLink } = useLinks();
+  const handleSubmit = async (
+    values: FormValues,
+    actions: FormikHelpers<FormValues>
+  ) => {
+    setLoading(true);
+    
+    actions.resetForm();
+    const linkObj = await getLinkData(values.shortener);
+    const duplicated = verifyDuplicated(linkObj, links);
 
-  const handleSubmit = async ({ shortener }: { shortener: string }) => {
-    const linkObj = await getLinkData(shortener)
-    linkObj.code !== '' ? addLink( linkObj ) : console.error("No Result")
+    //Duplicated is True addLink to Array
+    !duplicated && addLink(linkObj);
+    setLoading(false);
   };
 
   return (
     <div className="container mx-auto relative bottom-20">
       <Formik
         initialValues={{ shortener: "" }}
-        onSubmit={handleSubmit}
+        onSubmit={(values, actions) => handleSubmit(values, actions)}
         validate={(values) => {
           const errors: FormikErrors<FormValues> = {};
 
@@ -49,13 +61,20 @@ export const Shortener = () => {
             <div className="absolute error italic mt-2 ml-1">
               {errors.shortener}
             </div>
+            <span className="flex justify-center">
+              {loading && <Spinner />}
+            </span>
           </Form>
         )}
       </Formik>
 
       {/* Result */}
       <article className="flex flex-col">
-        <Links />
+        {/* <Links /> */}
+        {links.length > 0 &&
+          links.map((linksData) => (
+            <Links key={linksData.code} linksObj={linksData} />
+          ))}
       </article>
     </div>
   );
