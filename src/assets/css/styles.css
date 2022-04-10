@@ -673,6 +673,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 140%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .min-w-\[7rem\] {
   min-width: 7rem;
 }
@@ -723,6 +727,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-visible {
   overflow: visible;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .whitespace-nowrap {
@@ -895,7 +903,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+@import '../../components/layout/Spinner/spinner.css';
 
 :root{
   /* ### Primary */
