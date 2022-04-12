@@ -21,10 +21,10 @@ export const Shortener = () => {
     
     actions.resetForm();
     const linkObj = await getLinkData(values.shortener);
-    const duplicated = verifyDuplicated(linkObj, links);
+    const verificated = linkObj.error ? true : verifyDuplicated(linkObj, links);
 
     //Duplicated is True addLink to Array
-    !duplicated && addLink(linkObj);
+    !verificated && addLink(linkObj);
     setLoading(false);
   };
 

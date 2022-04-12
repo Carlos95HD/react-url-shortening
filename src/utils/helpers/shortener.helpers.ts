@@ -16,6 +16,7 @@ export const getLinkData = async (url: string) => {
       code: "",
       fullShortLink: "",
       originalLink: "",
+      error: true
     };
   }
 };
