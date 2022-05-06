@@ -11,24 +11,23 @@ export const getLinkShorter = async( url:string ) => {
       } else {
         Swal.fire({
           title:'Alert',
-          text:'there was a problem in the request, try again',
+          text:'There was a problem in the request, try again',
           icon:"info",
         });
-        return {};
       }
     })
     .catch(function (error) {
       if (error.response) {
         Swal.fire({
           title:'Error',
-          text:'contact the developer',
+          text:'Please, insert a link valid',
           icon:"error",
         });
         return {};
       } else if (error.request) {
         Swal.fire({
-          title:'Server Error',
-          text:'contact the developer',
+          title:'Error to request',
+          text:'Error to request data... verify your connection to internet, or contact at admin.',
           icon:"error",
         });
         return {};
