@@ -82,7 +82,7 @@ export const NavBar = () => {
             </li>
           </ul>
 
-          <div className="border-b border-gray-500 sm:w-60 self-center md:hidden"></div>
+          <div className="border-b border-gray-500 w-full sm:w-60 self-center md:hidden"></div>
 
           {/* Buttons */}
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:self-center md:w-[8.2rem]">

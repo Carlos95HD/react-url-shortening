@@ -5,6 +5,7 @@ interface props {
   linksObj: linkData;
 }
 
+// export const Links = ({ linksObj }: props): JSX.Element => {
 export const Links = ({ linksObj }: props): JSX.Element => {
   const { fullShortLink, originalLink } = linksObj;
   const [isCopied, setIsCopied] = useState<boolean>(false);
@@ -22,19 +23,21 @@ export const Links = ({ linksObj }: props): JSX.Element => {
   };
 
   return (
-    <article className="bg-white flex justify-between items-center p-5 rounded-md mt-4">
-      <p className="text-lg text-dark-violet overflow-hidden whitespace-nowrap text-ellipsis w-2/3">
+    <article className="bg-white flex flex-col mx-4 rounded-md mt-4 md:mx-0 md:justify-between md:flex-row md:items-center">
+      <p className="m-4 text-lg text-dark-violet overflow-hidden whitespace-nowrap text-ellipsis md:w-2/3">
         {originalLink}
       </p>
 
-      <div>
-        <button className="link-primary text-lg mr-4" onClick={handleClick}>
+      <div className="border-b"></div>
+
+      <div className="flex flex-col items-start m-4 md:items-center md:flex-row">
+        <button className="link-primary text-lg mb-4 mr-4 md:mb-0" onClick={handleClick}>
           {fullShortLink}
         </button>
 
         {!isCopied ? (
           <button
-            className="btn btn-primary py-2 rounded-md min-w-[7rem]"
+            className="btn btn-primary py-2 rounded-md min-w-full md:min-w-[7rem]"
             onClick={handleCopy}
           >
             Copy
@@ -42,7 +45,7 @@ export const Links = ({ linksObj }: props): JSX.Element => {
         ) : (
           <button
             disabled
-            className="btn text-white bg-secondary py-2 rounded-md min-w-[7rem]"
+            className="btn text-white bg-secondary py-2 rounded-md min-w-full md:min-w-[7rem]"
           >
             Copied!
           </button>

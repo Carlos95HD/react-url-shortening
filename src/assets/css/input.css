@@ -99,6 +99,10 @@ footer{
   color: var(--red);
 }
 
+.border-error{
+  border: 2px solid var(--red);
+}
+
 /* Navbar */
 .bg-nav{
   background-color: var(--dark-violet);
@@ -138,4 +142,15 @@ footer{
 
 .footer_social svg:hover{
   fill:cyan
+}
+
+@media (max-width: 768px) {
+
+  .shorten-bg{
+    background-image: url('../../assets/img/bg-shorten-mobile.svg');
+  }
+
+  .boost-bg{
+    background-image: url('../../assets/img/bg-boost-mobile.svg');
+  }
 }
