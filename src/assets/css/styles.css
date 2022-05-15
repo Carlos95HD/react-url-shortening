@@ -528,6 +528,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 3rem;
 }
 
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -581,6 +589,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mt-40 {
@@ -639,6 +657,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -683,6 +709,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1rem;
 }
 
+.h-max {
+  height: -webkit-max-content;
+  height: max-content;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -713,6 +760,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: auto;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -721,12 +776,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: none;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
-}
-
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -850,6 +905,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -928,6 +987,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -942,6 +1011,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .italic {
@@ -1211,6 +1284,26 @@ footer{
     position: relative;
   }
 
+  .md\:top-28 {
+    top: 7rem;
+  }
+
+  .md\:bottom-20 {
+    bottom: 5rem;
+  }
+
+  .md\:bottom-12 {
+    bottom: 3rem;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:top-12 {
+    top: 3rem;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -1249,6 +1342,10 @@ footer{
     margin-bottom: 0px;
   }
 
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
   .md\:ml-1 {
     margin-left: 0.25rem;
   }
@@ -1257,16 +1354,8 @@ footer{
     margin-top: 0.5rem;
   }
 
-  .md\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .md\:mr-6 {
-    margin-right: 1.5rem;
-  }
-
-  .md\:mr-0 {
-    margin-right: 0px;
+  .md\:-mb-12 {
+    margin-bottom: -3rem;
   }
 
   .md\:flex {
@@ -1283,6 +1372,10 @@ footer{
 
   .md\:h-0 {
     height: 0px;
+  }
+
+  .md\:h-2 {
+    height: 0.5rem;
   }
 
   .md\:w-auto {
@@ -1309,20 +1402,16 @@ footer{
     width: 66.666667%;
   }
 
-  .md\:w-5\/6 {
-    width: 83.333333%;
+  .md\:w-72 {
+    width: 18rem;
   }
 
-  .md\:w-\[80\%\] {
-    width: 80%;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
-  .md\:w-\[77\%\] {
-    width: 77%;
-  }
-
-  .md\:w-\[75\%\] {
-    width: 75%;
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:min-w-\[7rem\] {
@@ -1391,6 +1480,14 @@ footer{
     padding: 1rem;
   }
 
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:py-2\.5 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
@@ -1408,6 +1505,16 @@ footer{
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-gray-400 {
@@ -1435,32 +1542,12 @@ footer{
     margin-right: 7rem;
   }
 
-  .lg\:w-4\/5 {
-    width: 80%;
-  }
-
-  .lg\:w-\[78\%\] {
-    width: 78%;
-  }
-
-  .lg\:w-\[86\] {
-    width: 86;
-  }
-
-  .lg\:w-\[86\%\] {
-    width: 86%;
-  }
-
-  .lg\:w-\[85\%\] {
-    width: 85%;
-  }
-
   .lg\:w-\[80\%\] {
     width: 80%;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
+  .lg\:p-9 {
+    padding: 2.25rem;
   }
 
   .lg\:text-7xl {
@@ -1470,40 +1557,12 @@ footer{
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-4\/5 {
-    width: 80%;
-  }
-
-  .xl\:w-11\/12 {
-    width: 91.666667%;
-  }
-
-  .xl\:w-\[88\] {
-    width: 88;
-  }
-
-  .xl\:w-\[88\%\] {
-    width: 88%;
-  }
-
   .xl\:w-\[84\%\] {
     width: 84%;
   }
 
-  .xl\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .xl\:justify-center {
-    justify-content: center;
-  }
-
   .xl\:justify-between {
     justify-content: space-between;
-  }
-
-  .xl\:justify-around {
-    justify-content: space-around;
   }
 }
 
