@@ -3,12 +3,10 @@ import { Logo } from "./Logo";
 export const Footer = () => {
   return (
     <footer>
-      <div className="flex container mx-auto py-16 justify-between">
-        <span>
-          <Logo fill={"#FFFFFF"} />
-        </span>
-        <nav className="flex">
-          <div className="mr-8 lg:mr-28">
+      <div className="container flex flex-col items-center justify-between mx-auto py-16 sm:flex-row sm:items-start">
+        <Logo fill={"#FFFFFF"} />
+        <nav className="flex flex-col text-center sm:flex-row">
+          <div className="mt-12 sm:mr-8 lg:mr-28 sm:mt-0">
             <h3 className="font-semibold text-white mb-4">Features</h3>
             <ul>
               <li className="mt-2">
@@ -29,7 +27,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="mr-8 lg:mr-28">
+          <div className="mt-12 sm:mr-8 lg:mr-28 sm:mt-0">
             <h3 className="font-semibold text-white mb-4">Resources</h3>
             <ul>
               <li className="mt-2">
@@ -50,7 +48,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="mr-8 lg:mr-28">
+          <div className="mt-12 sm:mr-8 lg:mr-28 sm:mt-0">
             <h3 className="font-semibold text-white mb-4">Company</h3>
             <ul>
               <li className="mt-2">
@@ -76,7 +74,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="">
+          <div className="mt-12  sm:mt-0">
             <ul className="flex place-content-between items-center">
               <li className="mr-4">
                 <a href="/#" className="footer_social">
