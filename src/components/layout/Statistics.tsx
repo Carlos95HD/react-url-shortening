@@ -64,11 +64,11 @@ export const Statistics = () => {
         </div>
       </article>
 
-      <article className="boost-bg flex flex-col place-items-center mt-16 py-12">
-        <h2 className="font-semibold text-4xl text-white">
+      <article className="boost-bg flex flex-col place-items-center md:mt-16 py-16">
+        <h2 className="font-semibold text-2xl text-white text-center md:text-4xl">
           Boost your links today
         </h2>
-        <button className="py-2 px-4 btn btn-primary mt-8 rounded-full w-fit">
+        <button className="font-semibold py-2 px-4 btn btn-primary mt-4 rounded-full w-fit">
           Get Started
         </button>
       </article>
