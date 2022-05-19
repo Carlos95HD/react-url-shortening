@@ -18,7 +18,7 @@ export const Statistics = () => {
 
         <div className="flex flex-col my-24 mx-4 text-center md:flex-row md:mx-0 md:text-left">
           <section className="bg-white p-6 lg:p-9 relative rounded-md md:bottom-12">
-            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit">
+            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit md:mx-0">
               <img
                 src={brandRecognition}
                 alt="brandRecognition"
@@ -35,7 +35,7 @@ export const Statistics = () => {
 
           <div className="bg-cyan w-2 h-16 md:relative mx-auto md:top-28 md:w-16 md:h-2"></div>
           <section className="bg-white p-6 lg:p-9 mt-10 rounded-md md:mt-0">
-            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit">
+            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit md:mx-0">
               <img src={detailedRecord} alt="detailedRecord" className="w-12" />
             </div>
             <h3 className="font-bold text-2xl mb-4">Detailed Records</h3>
@@ -48,7 +48,7 @@ export const Statistics = () => {
           <div className="bg-cyan w-2 h-16 relative mx-auto md:top-28 md:w-16 md:h-2"></div>
 
           <section className="bg-white p-6 lg:p-9 mt-10 rounded-md md:mt-0 md:top-12 md:relative">
-            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit">
+            <div className="bg-secondary bottom-20 h-auto rounded-full p-5 relative mx-auto -mb-12 w-fit md:mx-0">
               <img
                 src={fullyCustomisable}
                 alt="fullyCustomisable"
