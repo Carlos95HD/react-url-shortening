@@ -12,7 +12,7 @@ export const Title = () => {
             Build your brand's recognition and get detailed insights on how yur
             links are performing.
           </p>
-          <button className="py-2 px-4 btn btn-primary mt-8 rounded-full w-fit">
+          <button className="py-2 px-4 btn btn-primary mt-8 font-semibold rounded-full w-fit">
             Get Started
           </button>
         </div>

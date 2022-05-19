@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer>
       <div className="container flex flex-col items-center justify-between mx-auto py-16 sm:flex-row sm:items-start">
         <Logo fill={"#FFFFFF"} />
-        <nav className="flex flex-col text-center sm:flex-row">
+        <nav className="flex flex-col text-center sm:text-left sm:flex-row">
           <div className="mt-12 sm:mr-8 lg:mr-28 sm:mt-0">
             <h3 className="font-semibold text-white mb-4">Features</h3>
             <ul>

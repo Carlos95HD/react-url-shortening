@@ -1,15 +1,16 @@
 import { useState } from "react";
+import { Logo } from "./Logo";
 
 export const NavBar = () => {
   const [openNav, setOpenNav] = useState<boolean>(false);
 
   return (
     <nav className="border-gray-200 fixed top-0 z-50 w-full md:z-0 md:container md:mx-auto md:py-2.5 md:relative">
-      <div className="flex flex-wrap items-center justify-between mx-auto text-center md:h-16">
+      <div className="flex flex-wrap items-center justify-between mx-auto text-center md:flex-nowrap md:h-16">
         <div className="bg-white pb-2 pt-4 px-6 flex w-full justify-between md:w-auto md:p-0">
-          <h1 className="self-center text-2xl font-semibold whitespace-nowrap">
-            Shortly
-          </h1>
+          <a href="/##" className="self-center whitespace-nowrap">
+            <Logo fill={"#232127"} />
+          </a>
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
@@ -58,7 +59,7 @@ export const NavBar = () => {
           <ul className="flex flex-col md:border-0 md:ml-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:self-center">
             <li className="self-center">
               <a
-                href="/"
+                href="/#"
                 className="block py-2 pr-4 pl-3 md:border-0 hover:text-gray-300 md:text-gray-violet md:hover:text-violet-dark md:p-0"
               >
                 Features
@@ -66,7 +67,7 @@ export const NavBar = () => {
             </li>
             <li className="self-center my-4">
               <a
-                href="/"
+                href="/#"
                 className="block py-2 pr-4 pl-3 md:border-0 hover:text-gray-300 md:text-gray-violet md:hover:text-violet-dark md:p-0"
               >
                 Pricing
@@ -74,7 +75,7 @@ export const NavBar = () => {
             </li>
             <li className="self-center mb-4 md:mb-0">
               <a
-                href="/"
+                href="/#"
                 className="block py-2 pr-4 pl-3 md:border-0 hover:text-gray-300 md:text-gray-violet md:hover:text-violet-dark md:p-0"
               >
                 Resources
@@ -88,7 +89,7 @@ export const NavBar = () => {
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:self-center md:w-[8.2rem]">
             <li className="self-center mb-4 md:mb-0">
               <a
-                href="/"
+                href="/#"
                 className="block py-2 pr-4 pl-3 md:border-0 hover:text-gray-300 md:text-gray-violet md:hover:text-violet-dark md:p-0"
               >
                 Login
@@ -96,7 +97,7 @@ export const NavBar = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/#"
                 className="btn btn-primary block py-2 px-4 rounded-full w-full sm:w-60 md:w-auto md:border-0 md:hover:disabled"
               >
                 Sign Up
