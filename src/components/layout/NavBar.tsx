@@ -8,7 +8,7 @@ export const NavBar = () => {
     <nav className="border-gray-200 fixed top-0 z-50 w-full md:z-0 md:container md:mx-auto md:py-2.5 md:relative">
       <div className="flex flex-wrap items-center justify-between mx-auto text-center md:flex-nowrap md:h-16">
         <div className="bg-white pb-2 pt-4 px-6 flex w-full justify-between md:w-auto md:p-0">
-          <a href="/##" className="self-center whitespace-nowrap">
+          <a href="/#" className="self-center whitespace-nowrap">
             <Logo fill={"#232127"} />
           </a>
           <button
